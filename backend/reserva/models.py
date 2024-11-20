@@ -42,7 +42,7 @@ class Producto(models.Model):
 
 #####################################################################################
 
-class Menu (models.Model): 
+class Menu(models.Model): 
     nombrePlato= models.CharField(max_length=20)
     descripcion= models.TextField() 
     precio = models.IntegerField() 
@@ -50,7 +50,6 @@ class Menu (models.Model):
 
 
 class Carrito(models.Model): 
-    items = models.IntegerField()
     cantidad = models.IntegerField()
     precio = models.IntegerField()
     menu= models.ForeignKey(Menu, on_delete=models.CASCADE)
@@ -66,6 +65,7 @@ class Venta(models.Model):
     estado= models.BooleanField(default=False)
     carrito = models.OneToOneField(Carrito, on_delete=models.CASCADE)
     tipoPago= models.OneToOneField(TipoPago, on_delete=models.CASCADE)
+
 
     
 class Mesa(models.Model): 
