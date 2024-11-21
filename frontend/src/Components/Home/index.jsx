@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HomeSection = styled.div`
@@ -100,7 +101,7 @@ const Home = () => {
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
                         <Product>
@@ -120,7 +121,7 @@ const Home = () => {
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
                         <Product>
@@ -140,7 +141,7 @@ const Home = () => {
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
                         <Product>

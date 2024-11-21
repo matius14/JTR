@@ -38,12 +38,12 @@ const Footer = () => {
     return(
         <Position>
             <LinkGroup>
-                <Link to={"/quiene"}>Quienes somos</Link>
+                <Link to={"/who"}>Quienes somos</Link>
                 <Link to={"/PQRS"}>PQRS</Link>
-                <Link to={"/contacto"}>Contactenos</Link>
-                <Link to={"/privacidad"}>Privacidad</Link>
-                <Link to={"/terminos"}>Terminos y condiciones</Link>
-                <Link to={"/ayuda"}>Ayuda</Link>
+                <Link to={"/contact"}>Contactenos</Link>
+                <Link to={"/privacy"}>Privacidad</Link>
+                <Link to={"/terms"}>Terminos y condiciones</Link>
+                <Link to={"/help"}>Ayuda</Link>
             </LinkGroup>
             <Redes>
                 <Link to={"https://www.facebook.com/"}><Logo src="facebook.png"></Logo></Link>

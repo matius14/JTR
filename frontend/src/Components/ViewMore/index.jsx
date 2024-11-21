@@ -9,12 +9,13 @@ const TitleViewMore = styled.h2`
     
 `
 
-const ViewMoreProduct = styled(Link)`
+const ViewMoreProduct = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 20px;
     
 `
-const Product = styled.div`
+const Product = styled(Link)`
     display: flex;
 `
 const ProductImg = styled.img`
@@ -43,7 +44,7 @@ const ViewMore = () =>{
         <ViewMoreSection>
             <TitleViewMore>Mas resultados para: comida extranjera</TitleViewMore>
             <ViewMoreProduct>
-                <Product>
+                <Product to={"/product"}>
                     <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                     <ContentProduct>
                         <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
@@ -52,7 +53,7 @@ const ViewMore = () =>{
                         <TypeFoodProduct>Mexicana</TypeFoodProduct>
                     </ContentProduct>
                 </Product>
-                <Product>
+                <Product to={"/product"}>
                     <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                     <ContentProduct>
                         <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>

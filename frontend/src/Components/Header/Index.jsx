@@ -43,12 +43,12 @@ const Header = () => {
             <Link to={"/"}><Logo src="Logo.png" alt="Logo del restaurante JTR" size="80px"></Logo></Link>
             <Buscar>
                 <TextField value={busqueda} onKeyDown={handleKeyDown} onChange={(e) => {setBusqueda(e.target.value)}}></TextField>
-                <Link to={`/resultado?data=${busqueda}`}><FontAwesomeIcon icon={faSearch} /></Link>
+                <Link to={`/search`}><FontAwesomeIcon icon={faSearch} /></Link>
             </Buscar>
             <LinkGroup>
                 <Link to="/formVideo"><FontAwesomeIcon icon={faUtensils} size="2x" /></Link>
                 <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} size="2x"/></Link>
-                <Link to="/formVideo"><FontAwesomeIcon icon={faCircleUser} size="2x"/></Link>
+                <Link to="/account"><FontAwesomeIcon icon={faCircleUser} size="2x"/></Link>
             </LinkGroup>
         </Position>
     )

@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import ViewMore from "./Components/ViewMore";
 import Product from "./Components/Product";
 import Account from "./Components/Account";
+import Information from "./Components/Information";
 
 const Container = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ function App() {
               <Route path='/view-more' element={<ViewMore/>} />
               <Route path='/product' element={<Product/>} />
               <Route path='/account' element={<Account/>} />
+              <Route path='/information' element={<Information/>} />
             </Routes>
             <Footer/>
           </Container>

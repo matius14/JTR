@@ -59,7 +59,7 @@ const Account = () => {
                 <Button variant="contained">Cerrar sesion</Button>
             </AccountContaint>
             <AccountContaintOption>
-                <AccountOption>
+                <AccountOption to={"/information"}>
                     <AccountOptionTitle>Informacion personal</AccountOptionTitle>
                     <AccountOptionDescription>Información sobre ti y tus preferencias en nuestro restaurante</AccountOptionDescription>
                 </AccountOption>
