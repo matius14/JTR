@@ -8,38 +8,62 @@ import styled from "styled-components";
 const AccountSection = styled.div`
     display: flex;
     flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 2rem;
 `
 const AccountContaint = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: start;
+    justify-content: center;
+
 `
 const AccountInfo = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
 `
 const AccountLogo = styled.div`
     
 `
-const AccountTitle = styled.h2`
-    
+const AccountTitle = styled.h4`
+    font-family: 'Inter';
 `
-const AccountName = styled.h4`
-    
+const AccountName = styled.h3`
+    font-family: 'Inter';
+
 `
 const AccountEmail = styled.h4`
-    
+    font-family: 'Inter';
+    color: #394AFF;
+`
+const ButtonAccount = styled(Button)`
+    &.MuiButton-root {
+        text-transform: none;
+        font-size: 1rem;
+        background-color: #FE2C55;
+    }
 `
 const AccountContaintOption = styled.div`
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 `
 const AccountOption = styled(Link)`
     display: flex;
-    border: 1px solid #000000;
-    border-radius: 10px;
     flex-direction: column;
-`
-const AccountOptionTitle = styled.h4`
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 300px;
+    gap: 1rem;
     color: #000000;
+`
+const AccountOptionTitle = styled.h3`
+   
 `
 const AccountOptionDescription = styled.h4`
 
@@ -51,12 +75,12 @@ const Account = () => {
         <AccountSection>
             <AccountContaint>
                 <AccountInfo>
-                    <AccountLogo><FontAwesomeIcon icon={faCircleUser} size="2x"></FontAwesomeIcon></AccountLogo>  
+                    <AccountLogo><FontAwesomeIcon icon={faCircleUser} size="6x"></FontAwesomeIcon></AccountLogo>  
                     <AccountTitle>¡Bienvenido de vuelta!</AccountTitle>
                     <AccountName>Andrés Camilo Restrepo Ramírez</AccountName>
                     <AccountEmail>andres.restrepo89@gmail.com</AccountEmail>
                 </AccountInfo>
-                <Button variant="contained">Cerrar sesion</Button>
+                <ButtonAccount variant="contained">Cerrar sesion</ButtonAccount>
             </AccountContaint>
             <AccountContaintOption>
                 <AccountOption to={"/information"}>

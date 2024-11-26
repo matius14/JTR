@@ -10,13 +10,13 @@ const HomeSection = styled.div`
 
 const SuggestionSection = styled.div`
     display: flex;
-    margin: 1rem 0 2rem 1rem;
 `
 
 const Suggestion = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 2rem 2rem;
 
 `
 
@@ -24,59 +24,79 @@ const Suggestion = styled.div`
 const ImgProduct = styled.img`
     width: 200px;
 `
-const TitleSuggestion = styled.h2`
-    
-
-
+const TitleSuggestion = styled.h3`
 
 `
-const Description = styled.h4`
-    
-   
+const Description = styled.h5`
+    font-size: 1rem;
+    font-family: 'Inter'; 
+    font-weight: unset;
+    line-height: 1rem;
 `
 const SuggestionAdd = styled.div`
-    background-color: #FBFBFB;
-    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    padding: 7rem 6rem;
+    align-items: center;
+    gap: 20px;
 
+`
+const TitleSuggestionAdd = styled.h3`
+    width: 200px;
+    text-align: center;
+`
+const SuggestionAddButton = styled(Button)`
 `
 
 const CategorySection = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    gap: 4rem
 
 `
 const TitleCategorySection = styled.h2`
     text-align: center;
     background-color: #E26D6D;
     padding: 0.5rem 0;
+    font-family:'Julee';
+    color: #FFFFFF;
+    font-weight: unset;
 `
 
 const Category = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
 `
 const ProductCategory = styled.div`
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
 
 `
-const Product = styled.div`
-    
+const Product = styled(Link)`
+    color: #000000;
 `
 const ProductImg = styled.img`
-    width: 100px;
+    width: 225px;
 `
 const ProductTitle = styled.h4`
     
 `
 
 const TitleCategory = styled.h2`
-    
+    font-size: 1.125rem;
+    font-family: 'julee';
+    font-weight: normal;
 `
 
 const CategoryHeader = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 `
 
@@ -92,27 +112,27 @@ const Home = () => {
                     <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaA</Description>
                 </Suggestion>
                 <SuggestionAdd>
-                    <TitleSuggestion>Sugerencia del chef</TitleSuggestion>
-                    <Button variant="contained">Agregar al carrito</Button>
+                    <TitleSuggestionAdd>Sugerencia del chef</TitleSuggestionAdd>
+                    <SuggestionAddButton variant="contained" sx={{ textTransform: 'none' }}>Agregar al carrito</SuggestionAddButton>
                 </SuggestionAdd>
             </SuggestionSection>
+            <TitleCategorySection>Categorias</TitleCategorySection>
             <CategorySection>
-                <TitleCategorySection>Categorias</TitleCategorySection>
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
@@ -121,18 +141,18 @@ const Home = () => {
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
@@ -141,18 +161,18 @@ const Home = () => {
                 <Category>
                     <CategoryHeader>
                         <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained" component={Link} to="/view-more">Ver mas</Button>
+                        <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                        <Product>
+                        <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>

@@ -7,35 +7,51 @@ const ContactSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 3rem;
+    gap: 1rem
 `
 
-const TitleContact = styled.h3`
+const TitleContact = styled.h2`
+    font-family: 'Inter';
+    font-weight: bold;
     
 `
 const ContactGroup = styled.div`
     display: flex;
     justify-content: space-around;
-    gap: 50px
+    gap: 50px;
 
 `
 const FormContact = styled.form`
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 `
-const InstructionContact = styled.h5`
+const InstructionContact = styled.h4`
     
 `
 const Field = styled.div`
     display: flex;
     flex-direction: column;
     width: 60%;
+    gap: 0.25rem;
 `
 const LabelTextfield = styled.h5`
-    
+    font-family:'Inter';
+    font-weight: unset;
 `
 
 const FormImg = styled.img`
     width: 250px;
+`
+
+const ButtonContact = styled(Button)`
+    &.MuiButton-root {
+        text-transform: none; 
+        padding-left: 4rem;
+        padding-right: 4rem;
+        align-items: center;
+    }
 `
 
 
@@ -94,7 +110,7 @@ const Contact = () =>{
                 </FormContact>
                 <FormImg src="contact_image.png" alt="imagen del telefono"/>
             </ContactGroup>
-            <Button variant="contained">Enviar</Button>
+            <ButtonContact variant="contained">Enviar</ButtonContact>
         </ContactSection>
     )
 

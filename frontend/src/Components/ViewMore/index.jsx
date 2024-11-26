@@ -3,9 +3,12 @@ import styled from "styled-components";
 
 
 const ViewMoreSection = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 1.5rem;
 `
-const TitleViewMore = styled.h2`
+const TitleViewMore = styled.h4`
     
 `
 
@@ -17,26 +20,30 @@ const ViewMoreProduct = styled.div`
 `
 const Product = styled(Link)`
     display: flex;
+    gap: 1rem;
 `
 const ProductImg = styled.img`
-    width: 100px;
+    width: 180px;
 `
 const ContentProduct = styled.div`
     display: flex;
     flex-direction: column;
+    color: #000000;
+    gap: 0.25rem
 
 `
 const TitleProduct = styled.h4`
-
+    font-family: 'Inter';
+    font-weight: unset;
 `
-const PriceProduct = styled.h5`
-    
+const PriceProduct = styled.h4`
+    font-family: 'Inter';
 `
-const AvailabilityProduct = styled.h5`
-    
+const AvailabilityProduct = styled.h4`
+    font-family: 'Inter';
 `
-const TypeFoodProduct = styled.h5`
-    
+const TypeFoodProduct = styled.h4`
+    font-family: 'Inter';
 `
 
 const ViewMore = () =>{
