@@ -48,7 +48,7 @@ const TableList = () =>{
         <TableListSection>
             <TableListSectionTitle>Reservacion de la mesa</TableListSectionTitle>
             <TableContainer>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -56,7 +56,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -64,7 +64,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -72,7 +72,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -80,7 +80,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -88,7 +88,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>
@@ -96,7 +96,7 @@ const TableList = () =>{
                         <TableAvaility>Disponibilidad</TableAvaility>
                     </TableInfo>
                 </Table>
-                <Table>
+                <Table to={'/table'}>
                     <TableImg src="mesa.png"/>
                     <TableInfo>
                         <TableTitle>Mesa 6</TableTitle>

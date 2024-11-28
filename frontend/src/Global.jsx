@@ -10,6 +10,17 @@ const Global = createGlobalStyle`
         text-decoration: none;
     }
 
+    @media (min-width: 1366px) {
+        body {
+            font-size: 1rem; /* Cambiar a 2rem en pantallas pequeñas */
+        }
+    }
+    @media (min-width: 1440px) {
+        body {
+            font-size: 1.25rem; /* Cambiar a 2rem en pantallas pequeñas */
+        }
+    }
+
 
 `
 

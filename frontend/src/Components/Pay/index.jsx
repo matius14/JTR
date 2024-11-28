@@ -2,6 +2,7 @@ import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Divider, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const PaySection = styled.div`
@@ -92,7 +93,7 @@ const Pay = () =>{
                         </RadioGroup>
                     </FormControl>
                 </PaySelectOption>
-                <ButtonForm variant="contained">confirmar pago</ButtonForm>
+                <ButtonForm variant="contained" component={Link} to="/confirmation">confirmar pago</ButtonForm>
             </PaySelect>
             <PaySummary>
                 <PaySummaryTitle>Compras realizadas</PaySummaryTitle>

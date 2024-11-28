@@ -1,6 +1,7 @@
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -98,7 +99,7 @@ const Information = () =>{
             </InformationContent>
             <ButtonContent>
                 <ButtonDelete variant="contained">Eliminar cuenta</ButtonDelete>
-                <ButtonEdit variant="contained">Editar informacion</ButtonEdit>
+                <ButtonEdit variant="contained" component={Link} to="/information-edit">Editar informacion</ButtonEdit>
             </ButtonContent>
         </InformationSection>
     )

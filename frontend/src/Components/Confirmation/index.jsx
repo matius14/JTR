@@ -63,11 +63,11 @@ const Confirmation = () =>{
                 <ConfirmationTitle>Gracias por realizar la compra</ConfirmationTitle>
                 <ConfirmationLogo><FontAwesomeIcon icon={faCheckCircle} size="3x"/></ConfirmationLogo>
             </ConfirmationMessage>
-            <ConfirmationPrint>
+            <ConfirmationPrint to={'/bill'}>
                 <ConfirmationPrintTitle>Imprimir factura</ConfirmationPrintTitle>
                 <ConfirmationPrintLogo><FontAwesomeIcon icon={faDownload} size="2x"/></ConfirmationPrintLogo>
             </ConfirmationPrint>
-            <ButtonHome variant="contained">Volver al inicio</ButtonHome>
+            <ButtonHome variant="contained" component={Link} to="/">Volver al inicio</ButtonHome>
         </ConfirmationSection>
     )
 

@@ -1,11 +1,13 @@
 import { Button, Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
 const BillSection = styled.div`
     display: flex;
     padding-left: 2rem;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
     
 `
 const BillContent = styled.div`
@@ -311,8 +313,8 @@ const Bill = () =>{
                 </BillData>
             </BillContent>
             <BillPrint>
-                <ButtonPrint variant="contained">Imprimir</ButtonPrint>
-                <ButtonCancel variant="contained">Cancelar</ButtonCancel>
+                <ButtonPrint variant="contained" >Imprimir</ButtonPrint>
+                <ButtonCancel variant="contained" component={Link} to='/'>Cancelar</ButtonCancel>
             </BillPrint>
         </BillSection>
     );

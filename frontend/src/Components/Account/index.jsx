@@ -80,7 +80,7 @@ const Account = () => {
                     <AccountName>Andrés Camilo Restrepo Ramírez</AccountName>
                     <AccountEmail>andres.restrepo89@gmail.com</AccountEmail>
                 </AccountInfo>
-                <ButtonAccount variant="contained">Cerrar sesion</ButtonAccount>
+                <ButtonAccount variant="contained" component={Link} to="/login">Cerrar sesion</ButtonAccount>
             </AccountContaint>
             <AccountContaintOption>
                 <AccountOption to={"/information"}>

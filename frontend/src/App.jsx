@@ -1,6 +1,6 @@
 import Global from "./Global";
 import Header from "./Components/Header/Index";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import styled from "styled-components";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -28,6 +28,10 @@ import ChangePassword from "./Components/ChangePassword";
 import RecoveryPassword from "./Components/RecoveryPassword";
 import InformationEdit from "./Components/InformationEdit";
 import Bill from "./Components/Bill";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import { useEffect } from "react";
+import RegisterNext from "./Components/RegisterNext";
 
 const Container = styled.div`
   display: flex;
@@ -38,14 +42,35 @@ const Container = styled.div`
 `
 
 function App() {
+    const noHeaderFooterRoutes = ['/login', '/register', '/register-next'];
+    
+    function Layout({ children }) {
+      const location = useLocation();
+      const shouldShowHeaderFooter = !noHeaderFooterRoutes.includes(location.pathname);
+
+      useEffect(() => {
+        // Esto asegura que el layout se actualice correctamente.
+      }, [location]);
+
+      return (
+        <>
+          {shouldShowHeaderFooter && <Header />}
+          {children}
+          {shouldShowHeaderFooter && <Footer />}
+        </>
+      );
+    }
     return (
       <>
         <Global/>
         <Router>
           <Container>
-            <Header/>
+            <Layout>
             <Routes>
               <Route path='/' element={<Home/>} />
+              <Route path='/login' element={<Login/>} />
+              <Route path='/register' element={<Register/>} />
+              <Route path='/register-next' element={<RegisterNext/>} />
               <Route path='/cart' element={<Cart/>} />
               <Route path='/search' element={<Search/>} />
               <Route path='/contact' element={<Contact/>} />
@@ -70,8 +95,9 @@ function App() {
               <Route path='/change-password' element={<ChangePassword/>} />
               <Route path='/recovery-password' element={<RecoveryPassword/>} />
               <Route path='/bill' element={<Bill/>} />
+
             </Routes>
-            <Footer/>
+            </Layout>
           </Container>
         </Router>
       </>

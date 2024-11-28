@@ -1,6 +1,7 @@
 import { Box, Button, TextField } from "@mui/material"
 import styled from "styled-components"
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -217,7 +218,7 @@ const Cart = () => {
                 <TitlePayment>Resumen</TitlePayment>
                 <CantProduct>Producto(4)</CantProduct>
                 <Total>Total: $323.212</Total> 
-                <CartButton variant="contained">Pagar</CartButton>
+                <CartButton variant="contained" component={Link} to='/pay'>Pagar</CartButton>
             </CartPayment>
 
         </CartSection>

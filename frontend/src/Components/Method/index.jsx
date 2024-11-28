@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -64,6 +65,18 @@ const ButtonGroup = styled.div`
     flex-direction: column;
     gap: 0.75rem;
 `
+const ButtonEdit = styled(Button)`
+    &.MuiButton-root{
+        text-transform: none;
+        font-weight: bold;
+    }
+`
+const ButtonDelete = styled(Button)`
+    &.MuiButton-root{
+        text-transform: none;
+        font-weight: bold;
+    }
+`
 const MethodCardDate = styled.h5`
     color: #FFFFFF;
     
@@ -82,7 +95,7 @@ const Method = () =>{
         <MethodSection>
             <MethodHeader>
                 <MethodTitle>Metodos de pago</MethodTitle>
-                <ButtonHeader variant="contained">Agregar metodo de pago</ButtonHeader>
+                <ButtonHeader variant="contained" component={Link} to='/method-add'>Agregar metodo de pago</ButtonHeader>
             </MethodHeader>
             <MethodCard>
                 <MethodCardDescription>
@@ -95,8 +108,8 @@ const Method = () =>{
                     </MethodCardInfo>
                 </MethodCardDescription>
                 <ButtonGroup>
-                    <Button variant="contained">Editar</Button>
-                    <Button variant="contained">Eliminar</Button>
+                    <ButtonEdit variant="contained" component={Link} to='/method-edit'>Editar</ButtonEdit>
+                    <ButtonDelete variant="contained">Eliminar</ButtonDelete>
                 </ButtonGroup>
             </MethodCard>
             <MethodCard>
@@ -110,8 +123,8 @@ const Method = () =>{
                     </MethodCardInfo>
                 </MethodCardDescription>
                 <ButtonGroup>
-                    <Button variant="contained">Editar</Button>
-                    <Button variant="contained">Eliminar</Button>
+                    <ButtonEdit variant="contained" component={Link} to='/method-edit'>Editar</ButtonEdit>
+                    <ButtonDelete variant="contained" >Eliminar</ButtonDelete>
                 </ButtonGroup>
             </MethodCard>
         </MethodSection>
