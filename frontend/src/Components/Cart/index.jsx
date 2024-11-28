@@ -8,7 +8,7 @@ import { useState } from 'react';
 const CartSection = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
 `
 
 const CartProduct = styled.div`

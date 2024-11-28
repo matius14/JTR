@@ -26,10 +26,10 @@ const ProductImg = styled.img`
     width: 400px;
 `
 const TitleDescription = styled.h2`
-    font-family: 'Inter';
+    
 `
 const ProductDescription = styled.h4`
-    font-family: 'Inter';
+    
 
 `
 const ProductCart = styled.div`
@@ -44,17 +44,17 @@ const ProductCart = styled.div`
     width: 25%;
 `
 const ProductTitle = styled.h3`
-    font-family: 'Inter';
+    
 `
 const ProductPrice = styled.h3`
-    font-family: 'Inter';
+    
 `
 const ProductAvailability = styled.h4`
-    font-family: 'Inter';
+    
 
 `
 const ProductCant = styled.h4`
-    font-family: 'Inter';
+    
 
 `
 const ButtonCart = styled(Button)`
@@ -74,6 +74,8 @@ const ProductRelationship = styled.div`
 const ProductRelationsSection = styled.div`
     display: flex;  
     justify-content: space-between;
+    gap: 1.25rem;
+    overflow-y: hidden;
   
 `
 
@@ -90,8 +92,8 @@ const ProductRelationsImg = styled.img`
     width: 200px;
 `
 const ProductRelationsTitle = styled.h4`
-    font-family: 'Inter';
-    font-weight: unset;
+    
+    
 `
 
 const Product = () =>{
@@ -115,15 +117,27 @@ const Product = () =>{
             <ProductRelationship>
                 <ProductRelationshipTitle>Producto relacionados</ProductRelationshipTitle>
                 <ProductRelationsSection>
-                    <ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
                         <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
                         <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
                     </ProductRelationsContaint>
-                    <ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
                         <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
                         <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
                     </ProductRelationsContaint>
-                    <ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
+                        <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
+                        <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
+                    </ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
+                        <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
+                        <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
+                    </ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
+                        <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
+                        <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
+                    </ProductRelationsContaint>
+                    <ProductRelationsContaint to={'/product'}>
                         <ProductRelationsImg src="taco.jpg" alt="imagen del producto"/>
                         <ProductRelationsTitle>Tacos al pastor</ProductRelationsTitle>
                     </ProductRelationsContaint>

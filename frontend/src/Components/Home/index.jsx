@@ -29,8 +29,8 @@ const TitleSuggestion = styled.h3`
 `
 const Description = styled.h5`
     font-size: 1rem;
-    font-family: 'Inter'; 
-    font-weight: unset;
+     
+    
     line-height: 1rem;
 `
 const SuggestionAdd = styled.div`
@@ -62,7 +62,7 @@ const TitleCategorySection = styled.h2`
     padding: 0.5rem 0;
     font-family:'Julee';
     color: #FFFFFF;
-    font-weight: unset;
+    
 `
 
 const Category = styled.div`
@@ -75,6 +75,8 @@ const ProductCategory = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-y: hidden;
+    gap: 1.25rem;
 
 `
 const Product = styled(Link)`
@@ -136,14 +138,6 @@ const Home = () => {
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
                         </Product>
-                    </ProductCategory>
-                </Category>
-                <Category>
-                    <CategoryHeader>
-                        <TitleCategory>Comida extranjera</TitleCategory>
-                        <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
-                    </CategoryHeader>
-                    <ProductCategory>
                         <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>
@@ -164,6 +158,50 @@ const Home = () => {
                         <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
                     </CategoryHeader>
                     <ProductCategory>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                    </ProductCategory>
+                </Category>
+                <Category>
+                    <CategoryHeader>
+                        <TitleCategory>Comida extranjera</TitleCategory>
+                        <Button variant="contained" component={Link} to="/view-more" sx={{borderRadius:2, textTransform:"none"}}>Ver mas</Button>
+                    </CategoryHeader>
+                    <ProductCategory>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
+                        <Product to="/product">
+                            <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                            <ProductTitle>Tacos al pastor</ProductTitle>
+                        </Product>
                         <Product to="/product">
                             <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                             <ProductTitle>Tacos al pastor</ProductTitle>

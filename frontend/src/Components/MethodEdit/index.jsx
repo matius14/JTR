@@ -11,29 +11,55 @@ const countryList = countries.getNames("en");
 
 const MethodEditSection = styled.div`
     display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    align-items: start;
 `
 const MethodEditSectionTitle = styled.h2`
 
 `
 const MethodEditContainer = styled.div`
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
 `
-const MethodEditCategory = styled.h5`
+const MethodEditCategory = styled.h4`
     
 `
 const MethodEditForm = styled.div`
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+
 `
-const MethodEditType = styled.h2`
+const MethodEditType = styled.h4`
+    
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    padding: 0.5rem;
+    text-align: center;
     
 `
 const MethodEditGroup = styled.div`
     display: flex;
+    gap: 1rem;
+    justify-content: space-between;
 `
 const Field = styled.div`
     display: flex;
 `
-
+const ButtonEdit = styled(Button)`
+    &.MuiButton-root {
+        text-transform: none; 
+        font-size: 1rem;
+        font-weight: bold;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+`
 
 const MethodEdit = () =>{
     
@@ -48,7 +74,7 @@ const MethodEdit = () =>{
 
     return(
         <MethodEditSection>
-            <MethodEditSectionTitle>Agregar una nueva tarjeta de credito</MethodEditSectionTitle>
+            <MethodEditSectionTitle>Editar informacion de la tarjeta de credito</MethodEditSectionTitle>
             <MethodEditContainer>
                 <MethodEditCategory>Metodo de pago: visa</MethodEditCategory>
                 <MethodEditForm>
@@ -61,6 +87,8 @@ const MethodEdit = () =>{
                                 size="small"
                                 value={dataNumber}
                                 onChange={(e) => setDataNumber(e.target.value)}
+                                sx={{width:'250px'}}
+
                             />
                         </Field>
                         <Field>
@@ -90,6 +118,8 @@ const MethodEdit = () =>{
                                 size="small"
                                 value={dataName}
                                 onChange={(e) => setDataName(e.target.value)}
+                                sx={{width:'225px'}}
+
                             />
                         </Field>
                         <Field>
@@ -99,6 +129,8 @@ const MethodEdit = () =>{
                                 size="small"
                                 value={dataLastName}
                                 onChange={(e) => setDataLastName(e.target.value)}
+                                sx={{width:'225px'}}
+
                             />
                         </Field>
                     </MethodEditGroup>
@@ -110,15 +142,16 @@ const MethodEdit = () =>{
                                 size="small"
                                 value={dataZipCode}
                                 onChange={(e) => setDataZipCode(e.target.value)}
+                                sx={{width:'225px'}}
                             />
                         </Field>
-                        <FormControl fullWidth>
-                            <InputLabel id="country-select-label">Región</InputLabel>
+                        <FormControl fullWidth size="small" sx={{width:'225px'}}>
+                            <InputLabel id="region-label">Region</InputLabel>
                             <Select
-                                labelId="country-select-label"
-                                id="country-select"
+                                labelId="region-label"
+                                id="demo-select-small"
                                 value={dataCountry}
-                                label="País o región"
+                                label='Region'
                                 onChange={(e) => setDataCountry(e.target.value)}
                             >
                                 {Object.entries(countryList).map(([code, name]) => (
@@ -131,7 +164,7 @@ const MethodEdit = () =>{
                     </MethodEditGroup>
                 </MethodEditForm>
             </MethodEditContainer>
-            <Button variant="contained">Agregar</Button>
+            <ButtonEdit variant="contained">Editar</ButtonEdit>
 
 
 

@@ -26,6 +26,8 @@ import Table from "./Components/Table";
 import Security from "./Components/Security";
 import ChangePassword from "./Components/ChangePassword";
 import RecoveryPassword from "./Components/RecoveryPassword";
+import InformationEdit from "./Components/InformationEdit";
+import Bill from "./Components/Bill";
 
 const Container = styled.div`
   display: flex;
@@ -51,6 +53,7 @@ function App() {
               <Route path='/product' element={<Product/>} />
               <Route path='/account' element={<Account/>} />
               <Route path='/information' element={<Information/>} />
+              <Route path='/information-edit' element={<InformationEdit/>} />
               <Route path='/method' element={<Method/>} />
               <Route path='/FAQ' element={<FAQ/>} />
               <Route path='/term' element={<Term/>} />
@@ -66,6 +69,7 @@ function App() {
               <Route path='/security' element={<Security/>} />
               <Route path='/change-password' element={<ChangePassword/>} />
               <Route path='/recovery-password' element={<RecoveryPassword/>} />
+              <Route path='/bill' element={<Bill/>} />
             </Routes>
             <Footer/>
           </Container>

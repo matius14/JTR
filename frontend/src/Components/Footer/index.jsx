@@ -10,6 +10,7 @@ const Position = styled.div`
     background-color: #E26D6D;
     padding: 1rem 4rem;
     align-items: center;
+    margin-top: auto;
 
 `
 
@@ -38,7 +39,7 @@ const Footer = () => {
     return(
         <Position>
             <LinkGroup>
-                <Link to={"/info"}>Quienes somos</Link>
+                <Link to={"/who"}>Quienes somos</Link>
                 <Link to={"/PQRS"}>PQRS</Link>
                 <Link to={"/contact"}>Contactenos</Link>
                 <Link to={"/privacy"}>Privacidad</Link>

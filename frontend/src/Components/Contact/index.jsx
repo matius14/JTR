@@ -12,7 +12,7 @@ const ContactSection = styled.div`
 `
 
 const TitleContact = styled.h2`
-    font-family: 'Inter';
+    
     font-weight: bold;
     
 `
@@ -38,7 +38,7 @@ const Field = styled.div`
 `
 const LabelTextfield = styled.h5`
     font-family:'Inter';
-    font-weight: unset;
+    
 `
 
 const FormImg = styled.img`

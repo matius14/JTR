@@ -5,18 +5,38 @@ import styled from "styled-components";
 
 const ChangePasswordSection =  styled.div`
     display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 1.5rem;
 `
-const ChangePasswordTitle = styled.h5`
+const ChangePasswordTitle = styled.h2`
     
 `
 const ChangePasswordForm = styled.form`
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 `
 const Field = styled.div`
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
 `
-const LabelTextfield = styled.h2`
+const LabelTextfield = styled.h4`
     
+    
+`
+const ButtonForm = styled(Button)`
+    &.MuiButton-root{
+        text-transform: none;
+        align-self: flex-start;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-weight: bold;
+
+    }
+
 `
 
 
@@ -61,7 +81,7 @@ const ChangePassword = () =>{
                             onChange={(e) => setDataPassConfirm(e.target.value)}
                         />
                     </Field>
-                    <Button variant="contained">Cambiar</Button>
+                    <ButtonForm variant="contained">Cambiar</ButtonForm>
             </ChangePasswordForm>
 
 

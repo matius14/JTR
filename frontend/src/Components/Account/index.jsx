@@ -28,14 +28,14 @@ const AccountLogo = styled.div`
     
 `
 const AccountTitle = styled.h4`
-    font-family: 'Inter';
+    
 `
 const AccountName = styled.h3`
-    font-family: 'Inter';
+    
 
 `
 const AccountEmail = styled.h4`
-    font-family: 'Inter';
+    
     color: #394AFF;
 `
 const ButtonAccount = styled(Button)`
@@ -87,15 +87,15 @@ const Account = () => {
                     <AccountOptionTitle>Informacion personal</AccountOptionTitle>
                     <AccountOptionDescription>Información sobre ti y tus preferencias en nuestro restaurante</AccountOptionDescription>
                 </AccountOption>
-                <AccountOption>
+                <AccountOption to={"/method"}>
                     <AccountOptionTitle>Metodos de pago</AccountOptionTitle>
                     <AccountOptionDescription>Metodos de pago que tienes guardado</AccountOptionDescription>
                 </AccountOption>
-                <AccountOption>
+                <AccountOption to={"/security"}>
                     <AccountOptionTitle>Privacidad y Seguridad</AccountOptionTitle>
                     <AccountOptionDescription>Información sobre ti y tus preferencias en nuestro restaurante</AccountOptionDescription>
                 </AccountOption>
-                <AccountOption>
+                <AccountOption to={"/FAQ"}>
                     <AccountOptionTitle>Soporte al cliente</AccountOptionTitle>
                     <AccountOptionDescription>Aqui encontraras las preguntas frecuentes y demas ayudas</AccountOptionDescription>
                 </AccountOption>

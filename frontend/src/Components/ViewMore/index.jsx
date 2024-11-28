@@ -33,17 +33,17 @@ const ContentProduct = styled.div`
 
 `
 const TitleProduct = styled.h4`
-    font-family: 'Inter';
-    font-weight: unset;
+    
+    
 `
 const PriceProduct = styled.h4`
-    font-family: 'Inter';
+    
 `
 const AvailabilityProduct = styled.h4`
-    font-family: 'Inter';
+    
 `
 const TypeFoodProduct = styled.h4`
-    font-family: 'Inter';
+    
 `
 
 const ViewMore = () =>{
@@ -51,6 +51,51 @@ const ViewMore = () =>{
         <ViewMoreSection>
             <TitleViewMore>Mas resultados para: comida extranjera</TitleViewMore>
             <ViewMoreProduct>
+                <Product to={"/product"}>
+                    <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                    <ContentProduct>
+                        <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
+                        <PriceProduct>$13000</PriceProduct>
+                        <AvailabilityProduct>Disponible</AvailabilityProduct>
+                        <TypeFoodProduct>Mexicana</TypeFoodProduct>
+                    </ContentProduct>
+                </Product>
+                <Product to={"/product"}>
+                    <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                    <ContentProduct>
+                        <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
+                        <PriceProduct>$13000</PriceProduct>
+                        <AvailabilityProduct>Disponible</AvailabilityProduct>
+                        <TypeFoodProduct>Mexicana</TypeFoodProduct>
+                    </ContentProduct>
+                </Product>
+                <Product to={"/product"}>
+                    <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                    <ContentProduct>
+                        <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
+                        <PriceProduct>$13000</PriceProduct>
+                        <AvailabilityProduct>Disponible</AvailabilityProduct>
+                        <TypeFoodProduct>Mexicana</TypeFoodProduct>
+                    </ContentProduct>
+                </Product>
+                <Product to={"/product"}>
+                    <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                    <ContentProduct>
+                        <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
+                        <PriceProduct>$13000</PriceProduct>
+                        <AvailabilityProduct>Disponible</AvailabilityProduct>
+                        <TypeFoodProduct>Mexicana</TypeFoodProduct>
+                    </ContentProduct>
+                </Product>
+                <Product to={"/product"}>
+                    <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
+                    <ContentProduct>
+                        <TitleProduct>Tacos al pastor con una tajada de limon pajarito</TitleProduct>
+                        <PriceProduct>$13000</PriceProduct>
+                        <AvailabilityProduct>Disponible</AvailabilityProduct>
+                        <TypeFoodProduct>Mexicana</TypeFoodProduct>
+                    </ContentProduct>
+                </Product>
                 <Product to={"/product"}>
                     <ProductImg src="taco.jpg" alt="imagen del producto"></ProductImg>
                     <ContentProduct>
